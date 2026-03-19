@@ -19,14 +19,14 @@ void draw(){
     background(190);
     //camera(width/2, height/2, (height/2)/tan(PI*30/180), width/2, height/2, 0, 0, 1, 0);
 
-    camera(width/2, height/2, 0, width/2, height/2, -1,0, 1, 0);
+    camera(width/2, height/2+150, 0, width/2, height/2+150, -1,0, 1, 0);
     translate(width/2, height/2, 0);
-    scale(300, -300, 300);
+    scale(1000, -1000, 1000);
 
     // Afficher la voiture
     pushMatrix();
     translate(0, 0, -0.3);
-    scale(0.02);
+    scale(0.008);
     shape(voiture);
     popMatrix();
 
